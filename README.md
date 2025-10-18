@@ -18,7 +18,7 @@ Antes de comenzar, asegúrate de tener instalado:
 ### 1️⃣ Clonar el Repositorio
 
 ```bash
-git clone https://gitlab.com/matricula-universidad-capas/matricula-backend.git
+git clone https://github.com/mijael18sr/matricula-backend.git
 cd matricula-backend
 ```
 
