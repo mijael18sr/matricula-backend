@@ -2,11 +2,11 @@ spring:
   application:
     name: matricula-backend
 
-  # Database Configuration
+  # Database Configuration - LOCAL DEVELOPMENT
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/matricula_db}
-    username: ${SPRING_DATASOURCE_USERNAME:matricula_user}
-    password: ${SPRING_DATASOURCE_PASSWORD:matricula_password}
+    url: jdbc:postgresql://localhost:5433/matricula_db
+    username: matricula_user
+    password: matricula_password
     driver-class-name: org.postgresql.Driver
 
   # JPA Configuration
@@ -24,7 +24,7 @@ spring:
 
 # Server Configuration
 server:
-  port: ${SERVER_PORT:8081}
+  port: 8080
   servlet:
     context-path: /api
 
@@ -48,3 +48,4 @@ logging:
           descriptor:
             sql:
               BasicBinder: TRACE
+
